@@ -1,1 +1,27 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="ml-social-buttons.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a href="https://twitter.com/tlasalmonie" class="twitter" title="Twitter"></a>
+	<a href="https://www.linkedin.com/in/lasalmoniethomas/" class="linkedin" title="Linkedin"></a>
+	<a href="mailto: tlasalmonie@gmail.com" class="email" title="Email"></a>
+	<input type="text" value="https://thomaslasalmonie.me/" id="link" hidden>
+	<a onclick="copyToClipboard()" class="sharethis" title="ShareThis"></a>
+</div>
+
+</body>
+</html>
+
+<script>
+	function copyToClipboard() {
+		var copyText = document.getElementById("link");
+		navigator.clipboard.writeText(copyText.value);
+	}
+</script>
